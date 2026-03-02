@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD Andrew | Corporatist Mode</title>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid #334155;
+            max-width: 400px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            color: #38bdf8;
+            margin-bottom: 5px;
+        }
+
+        .age {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #f43f5e;
+            margin: 10px 0;
+        }
+
+        .joke-text {
+            font-style: italic;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        .wfh-badge {
+            background: #22c55e;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 15px 0;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .corporate-wish {
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+
+        
+        .circle {
+            position: absolute;
+            background: rgba(56, 189, 248, 0.1);
+            border-radius: 50%;
+            z-index: 1;
+            animation: float 6s infinite alternate;
+        }
+
+        @keyframes float {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="circle" style="width: 200px; height: 200px; top: 10%; left: 5%;"></div>
+    <div class="circle" style="width: 150px; height: 150px; bottom: 10%; right: 5%; animation-delay: 2s;"></div>
+
+    <div class="card">
+        <div class="wfh-badge">STATUS: CELEBRATING 🥳</div>
+        <h1>La mulți ani, Andrew!</h1>
+        <div class="age">33</div>
+        <p class="joke-text">"33 de ani de... <b>WTF IS A KILOMETER?!</b> 🦅🇺🇸"</p>
+
+        <div class="corporate-wish">
+            <p>Sper ca anul acesta să ai un <b>ROI</b> uriaș pe plan personal, <b>bandwidth</b> nelimitat pentru distracție și cât mai puține ședințe care "could have been an email".</p>
+            <p>May your birthday be filled with joy, cold beers, and zero <b>ASAP</b>-uri!</p>
+        </div>
+
+        <p style="margin-top: 25px; font-size: 0.8rem; color: #64748b;">
+            AS PER OUR PREVIOUS CONVERSATION: Let's party! 📈
+        </p>
+    </div>
+
+</body>
+</html>
