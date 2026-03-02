@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La mulți ani, Andrei!</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #d4af37; /* Culoare aurie pentru General */
+        }
+
+        .container {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+        }
+
+        img {
+            max-width: 90vw;
+            max-height: 70vh;
+            border: 8px solid #d4af37;
+            border-radius: 10px;
+            box-shadow: 0 0 50px rgba(212, 175, 55, 0.5);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 10px black;
+        }
+
+        /* Efect de artificii simplu din CSS */
+        .firework {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            box-shadow: 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff;
+            animation: explode 2s infinite;
+        }
+
+        @keyframes explode {
+            0% {
+                box-shadow: 0 0 #fff;
+                opacity: 1;
+            }
+
+            100% {
+                box-shadow: -100px -100px 0 #ff0, 100px -100px 0 #f0f, -100px 100px 0 #0ff, 100px 100px 0 #0f0, 0 -150px 0 #f00;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="firework" style="top: 20%; left: 20%;"></div>
+    <div class="firework" style="top: 15%; left: 80%; animation-delay: 0.5s;"></div>
+    <div class="firework" style="top: 70%; left: 10%; animation-delay: 1.2s;"></div>
+
+    <div class="container">
+        <h1>🤴 La mulți ani, Andrei! 🤴</h1>
+        <img src="https://i.postimg.cc/s2zJ9T57/Whats-App-Image-2026-03-02-at-17-36-48.jpg" alt="Andrei Bonaparte">
+        <h2>33 de ani de glorie!</h2>
+    </div>
+
+</body>
+</html>
